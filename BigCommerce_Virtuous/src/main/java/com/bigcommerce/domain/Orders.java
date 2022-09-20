@@ -1,0 +1,85 @@
+package com.bigcommerce.domain;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class Orders {
+	private int id;
+    private int customer_id;
+    private Date date_created;
+    private Date date_modified;
+    private String date_shipped;
+    private int status_id;
+    private String status;
+    private String subtotal_ex_tax;
+    private String subtotal_inc_tax;
+    private String subtotal_tax;
+    private String base_shipping_cost;
+    private String shipping_cost_ex_tax;
+    private String shipping_cost_inc_tax;
+    private String shipping_cost_tax;
+    private int shipping_cost_tax_class_id;
+    private String base_handling_cost;
+    private String handling_cost_ex_tax;
+    private String handling_cost_inc_tax;
+    private String handling_cost_tax;
+    private int handling_cost_tax_class_id;
+    private String base_wrapping_cost;
+    private String wrapping_cost_ex_tax;
+    private String wrapping_cost_inc_tax;
+    private String wrapping_cost_tax;
+    private int wrapping_cost_tax_class_id;
+    private String total_ex_tax;
+    private String total_inc_tax;
+    private String total_tax;
+    private int items_total;
+    private int items_shipped;
+    private String payment_method;
+    private Object payment_provider_id;
+    private String payment_status;
+    private String refunded_amount;
+    private boolean order_is_digital;
+    private String store_credit_amount;
+    private String gift_certificate_amount;
+    private String ip_address;
+    private String ip_address_v6;
+    private String geoip_country;
+    private String geoip_country_iso2;
+    private int currency_id;
+    private String currency_code;
+    private String currency_exchange_rate;
+    private int default_currency_id;
+    private String default_currency_code;
+    private String staff_notes;
+    private String customer_message;
+    private String discount_amount;
+    private String coupon_discount;
+    private int shipping_address_count;
+    private boolean is_deleted;
+    private String ebay_order_id;
+    private String cart_id;
+    private BillingAddress billing_address;
+    private ShippingAddress shipping_addresses;
+    private Products products;
+    private Coupons coupons;
+    private boolean is_email_opt_in;
+    private Object credit_card_type;
+    private String order_source;
+    private int channel_id;
+    private Object external_source;
+    private Object external_id;
+    private Object external_merchant_id;
+    private String tax_provider_id;
+    private String customer_locale;
+    private String external_order_id;
+    private String store_default_currency_code;
+    private String store_default_to_transactional_exchange_rate;
+    private String custom_status;
+    private String title;
+    private String phone;
+
+}
